@@ -110,11 +110,14 @@ endmodule
 ```
 
 **Output Waveform**
+
 **2 bit Multiplier**
+
 ![318350573-560eccc5-6a68-48f0-ae9c-f721fb0b33c0](https://github.com/Jayanth-T/VLSI-LAB-EXP-3/assets/106177371/8fc47862-1033-4b80-8753-b8160787cbed)
 
 
 **4 Bit Multiplier**
+
 ![318351128-ea14e5dc-d59e-4093-84c9-00b1657d4c26](https://github.com/Jayanth-T/VLSI-LAB-EXP-3/assets/106177371/a383f18f-2e55-4bf4-a1e1-a1732a005735)
 
 
