@@ -1,35 +1,36 @@
-SIMULATION AND IMPLEMENTATION OF MULTIPLIER
-**AIM: **
+# SIMULATION AND IMPLEMENTATION OF MULTIPLIER
+
+# AIM:
  To simulate and synthesis multiplier using Xilinx ISE.
 
-**APPARATUS REQUIRED:**
-Xilinx 14.7
-Spartan6 FPGA
+# APPARATUS REQUIRED:
+                  Vivado 2023.1
   
-**PROCEDURE:**
-STEP:1  Start  the Xilinx navigator, Select and Name the New project.
-STEP:2  Select the device family, device, package and speed.       
-STEP:3  Select new source in the New Project and select Verilog Module as the Source type.                       
-STEP:4  Type the File Name and Click Next and then finish button. Type the code and save it.
-STEP:5  Select the Behavioral Simulation in the Source Window and click the check syntax.                       
-STEP:6  Click the simulation to simulate the program and  give the inputs and verify the outputs as per the truth table.               
-STEP:7  Select the Implementation in the Sources Window and select the required file in the Processes Window.
-STEP:8  Select Check Syntax from the Synthesize  XST Process. Double Click in the  FloorplanArea/IO/Logic-Post Synthesis process in the User Constraints process group. UCF(User constraint File) is obtained. 
-STEP:9  In the Design Object List Window, enter the pin location for each pin in the Loc column Select save from the File menu.
-STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here.
-STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
+# PROCEDURE:
+1. Open Vivado: Launch Xilinx Vivado software on your computer.
 
-**Logic Diagram**
+2. Create a New Project: Click on "Create Project" from the welcome page or navigate through "File" > "Project" > "New".
+
+3. Project Settings: Follow the prompts to set up your project. Specify the project name, location, and select RTL project type.
+
+4. Add Design Files: Add your Verilog design files to the project. You can do this by right-clicking on "Design Sources" in the Sources window, then selecting "Add Sources". Choose your Verilog files from the file browser.
+
+5. Specify Simulation Settings: Go to "Simulation" > "Simulation Settings". Choose your simulation language (Verilog in this case) and simulation tool (Vivado Simulator).
+
+6. Run Simulation: Go to "Flow" > "Run Simulation" > "Run Behavioral Simulation". This will launch the Vivado Simulator and compile your design for simulation.
+
+7. Set Simulation Time: In the Vivado Simulator window, set the simulation time if it's not set automatically. This determines how long the simulation will run.
+
+8. Run Simulation: Start the simulation by clicking on the "Run" button in the simulation window.
+
+9. View Results: After the simulation completes, you can view waveforms, debug signals, and analyze the behavior of your design.
+
+# Logic Diagram
 # 2 bit Multiplier
-![301736574-7713750f-65e6-41c0-8082-5005eac4031c](https://github.com/Jayanth-T/VLSI-LAB-EXP-3/assets/106177371/a3875eda-1b7a-43f5-bca4-b3892454d034)
 
+![320416478-e1eca648-0c56-4c81-adbf-d1a41b4b0ede](https://github.com/Jayanth-T/VLSI-LAB-EXP-3/assets/106177371/f0da9b12-cbf8-42ce-b321-da0f1cb76e99)
 
-# 4 Bit Multiplier
-![318350783-e9423ec2-41b0-4e2d-9931-05f4554a7393](https://github.com/Jayanth-T/VLSI-LAB-EXP-3/assets/106177371/86975452-6d21-49b3-9370-9f9f728fc25e)
-
-
-**Verilog code**
-# 2 bit Multiplier
+# Verilog code
 ```
 ha adder2(w3,w4,p[2],cout);
 module ha(a,b,sum,carry);
@@ -51,7 +52,19 @@ ha adder1(w1,w2,p[1],w4);
 endmodule
 ```
 
+# Output Waveform
+
+![320417535-ea6cd404-113f-47cb-acf2-bb92d5acadac](https://github.com/Jayanth-T/VLSI-LAB-EXP-3/assets/106177371/d0d34571-1f27-44b6-bcf0-251caa88f880)
+
+# RTL DESIGN
+
+<img width="760" alt="324395659-798429a4-bc03-46d8-b933-7949e0c73e0d" src="https://github.com/Jayanth-T/VLSI-LAB-EXP-3/assets/106177371/b81a6bb1-4e28-413d-9394-1efaaab7fa2b">
+
 # 4 Bit Multiplier
+
+![318350783-e9423ec2-41b0-4e2d-9931-05f4554a7393](https://github.com/Jayanth-T/VLSI-LAB-EXP-3/assets/106177371/86975452-6d21-49b3-9370-9f9f728fc25e)
+
+# Verilog code
 ```
 module ha(a,b,sum,carry);
 input a,b;
@@ -109,20 +122,15 @@ fa r74(w[15],fc[4],fc[6],p[6],p[7]);
 endmodule
 ```
 
-**Output Waveform**
-
-**2 bit Multiplier**
-
-![318350573-560eccc5-6a68-48f0-ae9c-f721fb0b33c0](https://github.com/Jayanth-T/VLSI-LAB-EXP-3/assets/106177371/8fc47862-1033-4b80-8753-b8160787cbed)
-
-
-**4 Bit Multiplier**
+# Output Waveform
 
 ![318351128-ea14e5dc-d59e-4093-84c9-00b1657d4c26](https://github.com/Jayanth-T/VLSI-LAB-EXP-3/assets/106177371/a383f18f-2e55-4bf4-a1e1-a1732a005735)
 
+# RTL DESIGN 
 
+<img width="758" alt="324395965-88150aef-1b7b-4310-9278-5216937c929e" src="https://github.com/Jayanth-T/VLSI-LAB-EXP-3/assets/106177371/d3df727d-a623-46ba-8ba7-3a2baa275963">
 
-**Result**
+# Result
 simulation and synthesis multiplier using Xilinx ISE completed successesfully
 
 
